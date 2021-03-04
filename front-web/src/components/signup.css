@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+font-size: 20px;
+color: rgb(255, 255, 255);
+
+/* background: linear-gradient(to right, #0a0a0a, #fd3f3f, #070707);} */
+
+background-color: black;
+}
+
+
+.center{
+    margin: 0 auto;
+}
+.rowcenter{
+   margin: 50px;
+}
+.formcenter{
+    width: 100%;
+    padding: 5px;
+    margin-left: 50%;
+}
+
+body {
+    margin:0;
+    color: rgb(255, 0, 0);
+    
+  }
+  .main {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      /* background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706); */
+      background-size: 600% 100%;
+      animation: gradient 16s linear infinite;
+      animation-direction: alternate;
+  }
+  @keyframes gradient {
+      0% {background-position: 0%}
+      100% {background-position: 100%}
+  }
+  
+
+
+.logincenter{
+   padding: 50px;
+}
+form {
+    width: 100%;
+    margin-left: 50%;
+}
+
+
+.grey-text{
+    color: rgb(253, 6, 6);
+}
