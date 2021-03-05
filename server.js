@@ -59,7 +59,8 @@ app.use(function (req, res, next) {
                     id: decodedData.id,
                     name: decodedData.name,
                     email: decodedData.email,
-                    phone: decodedData.phone
+                    phone: decodedData.phone,
+                    role: decodedData.role
                 }, SERVER_SECRET)
 
                 res.cookie('jToken', token, {
@@ -87,6 +88,7 @@ app.get("/profile", (req, res, next) => {
     userModel.findById(req.body.jToken.id, 'name email phone createdOn role', function (err, doc) {
         if (!err) {
             res.send({
+                status:200,
                 profile: doc
             })
 

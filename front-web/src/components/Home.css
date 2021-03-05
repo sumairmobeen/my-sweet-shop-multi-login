@@ -1,7 +1,7 @@
 
 body {
     margin:0;
-    color: black;
+    color: rgb(236, 255, 169);
     
   }
   .main {
@@ -29,7 +29,7 @@ form {
 }
 
 h3, p{
-    color: rgb(0, 0, 0);
+    color: rgb(1, 245, 253);
     font-weight: bold;
 }
 

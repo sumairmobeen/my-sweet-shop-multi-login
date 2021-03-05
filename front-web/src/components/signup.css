@@ -1,12 +1,13 @@
 body{
     text-align: center;
 font-size: 20px;
-color: rgb(255, 255, 255);
+color: rgb(0, 236, 253);
 
-/* background: linear-gradient(to right, #0a0a0a, #fd3f3f, #070707);} */
+background: linear-gradient(to right, #0a0a0a, #fd3f3f, #070707);}
 
-background-color: black;
-}
+/* background-color: black; */
+
+
 
 
 .center{
@@ -48,6 +49,7 @@ body {
 form {
     width: 100%;
     margin-left: 50%;
+    color: aqua;
 }
 
 

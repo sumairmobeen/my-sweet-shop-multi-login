@@ -21,7 +21,7 @@ function Logout() {
         });
 
     }
-    return (<Button variant="danger" onClick={logout}>Logout</Button>)
+    return (<Button variant="danger" style={{float : 'right'}} onClick={logout}>Logout</Button>)
 }
 
 export default Logout;

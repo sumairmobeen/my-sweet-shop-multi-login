@@ -30,12 +30,13 @@ function Login() {
                 password: document.getElementById('password').value
             }, withCredentials: true
         }).then((response) => {
+            console.log(response.data)
             if (response.data.status === 200) {
                 // alert(response.data.message)
                 history.push("./Dashboard");
 
                 setGlobalState(prev => {
-                    return { ...prev, user: response.data.user, loginStatus: true, token: response.data.token }
+                    return { ...prev, user: response.data.user, loginStatus: true, token: response.data.token, role:response.data.user.role }
                 })
             } else {
                 alert(response.data.message);

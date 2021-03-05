@@ -9,7 +9,7 @@ background: linear-gradient(to right, #00488b,  #739bf0, #fb300c, #236e8b);} */
 
 body {
     margin:0;
-    color: black;
+    color: rgb(252, 158, 158);
     
   }
   .main {
@@ -38,5 +38,5 @@ form {
 
 
 lable.grey-text{
-    color: black;
+    color: rgb(23, 187, 252);
 }

@@ -12,16 +12,15 @@ export function GlobalStateProvider({ children }) {
         loginStatus: false,
         role: null,
     })
-
+    console.log(data)
     useEffect(() => {
         axios({
             method: "get",
             url: `http://localhost:5000/profile`,
             withCredentials: true
         }).then((res) => {
-            console.log("context response", res.data.profile);
+            console.log("context response", res.data.profile.role);
             if (res.data.status === 200) {
-
                 setData((prev) => ({
                     ...prev,
                     user: res.data.profile,

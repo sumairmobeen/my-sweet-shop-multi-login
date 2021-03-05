@@ -1,3 +1,5 @@
+import Pictures from "./Pictures/logo.png"
+
 import React, { Component } from "react";
 
 import './App.css';
@@ -26,6 +28,7 @@ function App() {
             {(globalState.role === null) ?
               <>
                 <Nav className="mr-auto">
+                  <img src={Pictures}  width="80px" height="50px"></img>
                   <Nav.Link href="/"><Link to="/" className="text-white">Home</Link></Nav.Link>
                   <Nav.Link href="/login"><Link to="/login" className="text-white">Login</Link></Nav.Link>
                   <Nav.Link href="/signup"><Link to="/signup" className="text-white">Signup</Link></Nav.Link>
@@ -35,7 +38,22 @@ function App() {
             {(globalState.role === "user") ?
               <>
                 <Nav className="mr-auto text-white">
+                <img src={Pictures}  width="80px" height="50px"></img>
                   <Nav.Link href="/" ><Link to="/">Dashboard</Link></Nav.Link>
+                  <Nav.Link href="/"><Link to="/profile">profile</Link></Nav.Link>
+                </Nav>
+                <Form inline>
+                  <div className="logout">
+                  <LogoutButton />
+                  </div>
+                </Form>
+              </>
+              : null}
+       {(globalState.role === "admin") ?
+              <>
+                <Nav className="mr-auto text-white">
+                <img src={Pictures}  width="80px" height="50px"></img>
+                  <Nav.Link href="/" ><Link to="/" >Admin.Dashboard</Link></Nav.Link>
                   <Nav.Link href="/"><Link to="/profile">profile</Link></Nav.Link>
                   {/* <Nav.Link href="/"><Link to="/"><LogoutButton /></Link></Nav.Link> */}
                 </Nav>
@@ -46,7 +64,6 @@ function App() {
                 </Form>
               </>
               : null}
-
 
           </Navbar>
 
