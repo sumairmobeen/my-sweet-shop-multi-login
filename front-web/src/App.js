@@ -17,6 +17,13 @@ import AdminDashboard from "./components/adminDashboard";
 import LogoutButton from './components/logout.';
 import { Navbar, Form, FormControl, Nav, Button } from 'react-bootstrap';
 import { useGlobalState } from './context/globalContext'
+// import AddProduct from "./components/AddProduct";
+
+
+
+
+
+
 function App() {
   const globalState = useGlobalState();
 
