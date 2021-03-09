@@ -26,7 +26,7 @@ function Dashboard() {
         <>
         <div className="main">
             {/* <LogoutButton />            */}
-            <h1 style={{color: 'green'}}>WELCOME INFINTY-TASTE</h1>
+            <h1 style={{color: 'yellow'}}>WELCOME INFINTY-TASTE</h1>
             <div className="row1">
 
                 {globalState.user ?

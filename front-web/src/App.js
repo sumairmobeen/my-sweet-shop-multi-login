@@ -29,9 +29,12 @@ function App() {
               <>
                 <Nav className="mr-auto">
                   <img src={Pictures}  width="80px" height="50px"></img>
+
                   <Nav.Link href="/"><Link to="/" className="text-white">Home</Link></Nav.Link>
                   <Nav.Link href="/login"><Link to="/login" className="text-white">Login</Link></Nav.Link>
                   <Nav.Link href="/signup"><Link to="/signup" className="text-white">Signup</Link></Nav.Link>
+                  <Nav.Link href="/cart" ><Link to="/cart"  className="text-white"><i style={{float: 'right'}} class="fas fa-cart-plus"></i></Link></Nav.Link>
+                  
                 </Nav>
               </>
               : null}
@@ -41,6 +44,7 @@ function App() {
                 <img src={Pictures}  width="80px" height="50px"></img>
                   <Nav.Link href="/" ><Link to="/">Dashboard</Link></Nav.Link>
                   <Nav.Link href="/"><Link to="/profile">profile</Link></Nav.Link>
+                  <Nav.Link href="/cart" ><Link to="/cart"  className="text-white"><i style={{float: 'right'}} class="fas fa-cart-plus"></i></Link></Nav.Link>
                 </Nav>
                 <Form inline>
                   <div className="logout">
@@ -55,13 +59,16 @@ function App() {
                 <img src={Pictures}  width="80px" height="50px"></img>
                   <Nav.Link href="/" ><Link to="/" >Admin.Dashboard</Link></Nav.Link>
                   <Nav.Link href="/"><Link to="/profile">profile</Link></Nav.Link>
-                  {/* <Nav.Link href="/"><Link to="/"><LogoutButton /></Link></Nav.Link> */}
+                  <div className="logbtn">
+                  <Nav.Link href="/" ><Link to="/"><LogoutButton /></Link></Nav.Link>
+                  </div>
                 </Nav>
-                <Form inline>
+                
+                {/* <Form inline>
                   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                   <Button variant="outline-info">Search</Button>
                   <LogoutButton />
-                </Form>
+                </Form> */}
               </>
               : null}
 
